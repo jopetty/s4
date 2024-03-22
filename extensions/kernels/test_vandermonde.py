@@ -6,7 +6,7 @@ import pytest
 
 from einops import rearrange
 
-from src.ops.vandermonde import log_vandermonde, log_vandermonde_fast
+from s4.ops.vandermonde import log_vandermonde, log_vandermonde_fast
 
 
 @pytest.mark.parametrize('L', [3, 17, 489, 2**10, 1047, 2**11, 2**12])

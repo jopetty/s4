@@ -17,16 +17,16 @@ from pytorch_lightning.loggers import WandbLogger
 from pytorch_lightning.utilities import rank_zero_only, rank_zero_warn
 from tqdm.auto import tqdm
 
-import src.models.nn.utils as U
-import src.utils as utils
-import src.utils.train
-from src.dataloaders import SequenceDataset  # TODO make registry
-from src.tasks import decoders, encoders, tasks
-from src.utils import registry
-from src.utils.optim.ema import build_ema_optimizer
-from src.utils.optim_groups import add_optimizer_hooks
+import s4.models.nn.utils as U
+import s4.utils as utils
+import s4.utils.train
+from s4.dataloaders import SequenceDataset  # TODO make registry
+from s4.tasks import decoders, encoders, tasks
+from s4.utils import registry
+from s4.utils.optim.ema import build_ema_optimizer
+from s4.utils.optim_groups import add_optimizer_hooks
 
-log = src.utils.train.get_logger(__name__)
+log = s4.utils.train.get_logger(__name__)
 
 # Turn on TensorFloat32 (speeds up large model training substantially)
 import torch.backends

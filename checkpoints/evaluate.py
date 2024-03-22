@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from torch.nn.modules import module
 import torch.nn.functional as F
 from torch.distributions import Categorical
-from src import utils
+from s4 import utils
 from einops import rearrange, repeat, reduce
 
 from train import SequenceLightningModule

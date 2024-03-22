@@ -12,9 +12,10 @@ from omegaconf import OmegaConf
 from torch.distributions import Categorical
 from tqdm.auto import tqdm
 
-from src import utils
-from src.dataloaders.audio import mu_law_decode
-from src.models.baselines.wavenet import WaveNetModel
+
+from s4 import utils
+from s4.dataloaders.audio import mu_law_decode
+from s4.models.baselines.wavenet import WaveNetModel
 from train import SequenceLightningModule
 
 def test_step(model):
